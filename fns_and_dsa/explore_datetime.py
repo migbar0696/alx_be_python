@@ -9,6 +9,4 @@ future_variable = int(input("Enter the number of days to add to the current date
 def calculate_future_date():
     today = datetime.now().date()
     days_to_add = timedelta(days = future_variable)
-    return f"Future date: {today + days_to_add}"
-print(display_current_datetime())
-print(calculate_future_date())
+    return f"Future date: {today + days_to_add.strftime("%Y-%m-%d %H:%M:%S")}"
