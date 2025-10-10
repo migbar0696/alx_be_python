@@ -9,6 +9,6 @@ def perform_operation(num1, num2, operation):
         if num2 != 0:
             return num1 / num2
         else:
-            print("Error: Division by ZERO")
+            return "Error: Division by zero"
     else:
-        print("Not correct input")
+        return "Invalid operation"
