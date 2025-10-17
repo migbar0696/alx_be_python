@@ -18,15 +18,15 @@ class Library:
         self._books = []      # private attribute of name _book
     
     
-    def Add_Book(self, book):
+    def add_book(self, book):
         self._books.append(book)
         
-    def Check_out_Book(self, title): 
+    def check_out_book(self, title): 
         for book in self._books:
             if book.title == title and book.is_available():
                 book.check_out()
             
-    def Return_Book(self, title):
+    def return_book(self, title):
         for book in self._books:
             if book.title == title and not(book.is_available()):
                 book.return_book()
